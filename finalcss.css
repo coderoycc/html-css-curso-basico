@@ -1,0 +1,73 @@
+:root{
+	--a:#e6e6e6;
+	--claro:#81e5d3;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #e6e6e6;
+}
+header div img{
+	background:#c6c6c6;
+}
+header div img:hover{
+	border-radius: 50%;
+}
+header,.main, footer{
+	width: 90%;
+	margin:20px auto; /*20px a arriba y abajo y auto a los lados(90%)*/
+	max-width: 1000px;
+}
+
+header nav{
+	background:  #044d4d;
+	overflow:hidden;/*Sirve para ocular contenido que sobrepasa el contenedor--Limpia los floats left rigth*/
+}
+header nav ul{
+	list-style:none;
+}
+header nav ul li{
+	float:left; /*floten a la izquierda*/
+}
+header nav ul li a{
+	padding: 10px 20px;
+	display: block;
+	color:white;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	background: var(--claro) ;
+	color: #000;
+}
+.main .articles{
+	width: 68%;
+	margin-right: 2%;
+	float:left;
+	background:  var(--a);
+	/*las clases main y articles son el 70% del SECTION
+	Los demás están a la izquierda*/
+}
+.main .articles article{
+	padding:20px;
+	background:#35e0c1;
+	margin-bottom: 20px;
+	/*A cada etiqueta article con las clases (MAIN/ARTICLES)
+	se le asigna un borde interior y un margen hacia abajo(entre etiquetas article)*/
+	text-align:justify;
+}
+aside{
+	width: 30%;
+	background:  var(--claro);
+	float:left;
+	padding: 20px;
+	box-sizing: border-box; /*cuando el ancho supera el 30%*/
+}
+footer{
+	background:  #000;
+	color:#fff;
+	clear:both;/*Limpiamos los FLOATS (salto de linea respetando estilos)*/
+	padding:10px 0px;
+	text-align: center;
+}

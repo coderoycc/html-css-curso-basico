@@ -1,0 +1,32 @@
+*{
+	line-height: 30px;
+}
+header h1{
+	text-decoration:blink;
+}
+table{
+	margin: auto;
+	background:skyblue;
+}
+nav{
+	text-align: center;
+}
+nav a{
+	text-transform: uppercase;
+	background:#000;
+	color:#fff;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+nav a:hover{
+	background:#ccc;
+	color:#000;
+	text-decoration: blink;
+}
+nav a:visited{
+	
+}
+nav a:active{
+	background:skyblue;
+	color:blue;
+}

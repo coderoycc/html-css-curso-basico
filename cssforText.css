@@ -1,0 +1,19 @@
+*{
+	background-color: black;
+}
+p{
+	color:skyblue;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+	line-height: 30px;
+	text-decoration: none;
+	text-transform: uppercase; /* mayusculas uppercase minusculas lowercase*/
+	letter-spacing: normal;
+	word-spacing: 9px;
+	text-shadow: 5px 5px 5px white;
+}
+.dos{
+	background-color: skyblue;
+}

@@ -1,0 +1,49 @@
+header{
+	margin: 0% 35%; /*Arriba abajo lados*/
+	padding: 15px;  /*Borde interno */
+	text-align: center;
+	border:2px solid;
+	border-radius: 20px;
+	box-shadow: red 3px 10px;
+}
+h2{
+	font-style: italic;
+}
+h2.uno{
+	margin:2% 35%;
+	padding: 10px;
+	text-align:center;
+	border:3px outset red; /*dotted dashed double none inset outset*/ 
+	border-radius: 30px 10px 0px 10px; /*en sentido de las agujas del reloj*/
+	outline:4px inset red;
+	outline-offset: 5px;
+}
+h2.dos{
+	margin: 2% 40%;
+	padding: 15px;
+	text-align: center;
+	border: double blue;
+}
+h2.tres{
+	margin: 0px 525px;
+	padding: 15px;
+	text-align:center;
+	outline: 2px double skyblue;
+	outline-offset: 2px;
+
+}
+h2.cuatro{
+	margin:2% 35%;
+	padding:15px;
+	text-align:center;
+	border:10px solid ;
+	border-image: url("/home/roy/Imágenes/star.png") 29 repeat;
+}
+p{
+	margin:0px 10%;
+	outline:4px solid yellow;
+	outline-offset: 5px;
+}
+div{
+
+}

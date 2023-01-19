@@ -1,0 +1,136 @@
+body{
+	background:#2c364a;
+}
+#principal{
+	width:900px;
+	height:auto;
+	overflow: hidden;
+	border:0px solid #ccc;
+	margin:auto;
+}
+header{
+	width:900px;
+	height:100px;
+	border:1px solid #000;
+	background:url("img/textura.jpeg");
+}
+
+#logo{
+	width:200px;
+	height: 100px;
+	border: 0px solid #000;
+	float:left;
+	color: #ccc ;
+	margin-left:10px;
+}
+#subtitulo{
+	margin-top:-22px;
+}
+.menu{
+	width:550px;
+	height: 40px;
+	border:0px solid #ccc;
+	float:right;
+	margin-top:40px;
+	text-align:right;
+}
+
+.menu ul li{
+	list-style:none;
+	float:right;
+}
+.menu ul li a{
+	text-decoration: none;
+	padding:10px 12px;
+	color:white;
+	border:1px solid  #3c41a7;
+	border-radius:1px;
+	background: #3c41a7;
+}
+.menu ul li a:hover{
+	color:black;
+	background:#ccc;
+}
+#slide{
+	margin-top:10px;
+	width: 900px;
+	height: 250px;
+}
+#categorias{
+	width: 900px;
+	height: auto;
+	overflow: hidden;
+	border:0px solid;
+	margin-top: 10px;
+}
+.uno{
+	width: 280px;
+	height: 405px;
+	overflow: hidden;
+	border:1px solid #ccc;
+	float:left;
+	padding:5px;
+	text-align: center;
+	background: #c7dee5;
+	border-radius: 7px; 
+}
+.uno img{
+	border-radius:4px;
+	opacity: 0.85;
+}
+.uno img:hover{
+	opacity: 1;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+.dos{
+	margin-left: 12px;
+	margin-right:12px;
+}
+.leer-mas{
+	border:2px solid blue;
+	text-decoration: none;
+	padding:8px 15px;
+	color: #042771;
+}
+.leer-mas:hover{
+	background:blue;
+	color:white;
+	transition: background 0.5s, color 0.6s;
+}
+#info{
+	width: 900px;
+	height:auto;
+	overflow: hidden;
+	border:0px solid #ccc;
+	margin-top: 10px;
+	background:#cbcfd7;
+}
+#izq{
+	width:580px;
+	height:380px;
+	overflow: hidden;
+	border:3px solid #2c364a;
+	float: left;
+	padding:5px;
+	text-align:justify;
+}
+#der{
+	width: 300px;
+	height: 370px;
+	border:0px solid #2c364a;
+	float:right;
+}
+
+footer{
+	width: 900px;
+	height: 100px;
+	text-align: center;
+	color: #9fa0bb;
+	background: url("img/textura.jpeg");
+}
+footer p{
+	padding:30px 0px;
+	font-weight: bold;
+}

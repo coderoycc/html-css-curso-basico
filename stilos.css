@@ -1,0 +1,78 @@
+html{
+	/*background: url(/home/roy/Imágenes/221297.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: (o center) 200px 500px /*scroll*/ 
+	font-family: Arial;
+	background-color: #ffffff; 
+}
+section > p :not(.seccion){ 
+	font-size: 30px;
+}/*Se usa para dar preferencia a una etiqueta en especifico*/
+form p{
+	font-size: 22px;
+}/* El formato solo afecta a las etiquetas P que estan dentro de una etiqueta FORM*/
+form{
+	/*width: 25px;*/
+
+	color: black;
+}
+input:focus, textarea:focus{
+	border:1px solid #1668c4;
+}
+input[type="submit"]{
+	background:#1668c4;
+	color:white;
+	border:none;
+}
+input[type="submit"]:hover{
+	background:skyblue;
+	color:black;
+	cursor:pointer;
+}
+textarea{
+	resize: horizontal; /*limitar la caja de texto*/
+	max-width: 400px;
+	min-width: 200px;
+}
+#Titu{
+	font: bold 26px Verdana;
+	color: rgba(53, 2, 65,.2); /*RGBA nos permite poner opacidad al color de 0 a 1*/
+} /*este formato afecta a todas las etiquetas que contengan el ID TITU*/
+.Comidas{
+	font-size: 15px;
+	color: #f96308 ;
+}/* este formato afecta a todas las etuiquetas que pertenezcan a la clase Comidas*/
+div.Comidas{
+	font-size: 25px;
+}/*Aplica solo a etiquetas especìficas (como DIV) que pertenezcan a la clase Comidas*/
+.seccion {
+	text-align: center;
+	letter-spacing: 0.09rem; /*Unidades de medida PX REM PT EM (Depende del elemento padre) y %*/
+	word-spacing: 10px;
+	font-size: 20px;
+}
+/* Para mas ver página 109*/ 
+section :not(.Comidas){
+	margin: 10px;
+	line-height: 30px;
+} /* aplica solo a etiquetas section menos a las clases COMIDAS*/
+#Parrafo{
+	font-size: 20px;
+	text-align: justify;
+	letter-spacing: 2px;
+	line-height: 22px; /*interlineado*/
+	width:50%; /*ANCHO*/
+	/*height: 200px; /*ALTURA*/
+	/*overflow: scroll; /*Acomoda con un desplazador en un costado PAG 122*/
+	background:url(/home/roy/Imágenes/fondo.jpg);
+	padding:10px;
+	margin: 30px 25%; /*Primer numero arriba/abajo dogundo numero derecha/izquiera*/
+	border: 5px solid  #065050;
+	color: #ffffff;
+}
+label{
+	text-decoration: none; /*underline overline line-throught*/
+	color: black;
+}
+/*Mas sobre bordes 129*/

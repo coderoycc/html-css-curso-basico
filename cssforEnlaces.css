@@ -1,0 +1,71 @@
+a{
+	font-size: 20px;
+	padding: 10px 20px;/*arriba abajo -- a los lados*/
+	text-decoration: none;
+	margin: 30px 20px;
+	display: inline-block;
+	background:#3ba7e1;
+	color:#fff;
+	box-shadow: 2px 5px 1px #1d64a6;   /*para convertir en boton*/
+
+}
+a:hover{
+	box-shadow: 1px 2px 0px #1d64a6; 
+}
+div{
+	width: 100%;
+}
+img{
+	height: 50% ;
+	width:600px;
+	display: block;
+	margin:auto;
+	border-radius: 55px ;
+	box-shadow: 5px 5px 0px #ccc;
+	padding: 10px; /*margen interno*/
+	border:3px solid red; /*Con el margen simular un marco*/
+}
+ul{
+	list-style-position: inside; /*espaciado*/
+}
+ol{
+	list-style-type: upper-latin;
+}
+.menu{
+	width: 100%;
+	background: #000;
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+.menu li{
+	display: inline-block;
+}
+.menu li a{
+	display: inline-block;
+	padding: 10px 20px; /*Contorno del elemento arriba y lados*/
+	color:#fff;
+	background: blue;
+	box-shadow: none;
+
+}
+.menu li a:hover{
+	background: #fff;
+	color:black;
+
+}
+/*a:link {/*PSeudoclases paginas no visitadas*/
+/*	color: #000;
+/*}
+a:hover {/*Cuando selecionas con el mouse*/
+/*	text-decoration: underline;
+/*	font-size: 30px;
+/*	background: green;	
+/*}
+/*a:active {/*cuando haces click*/
+/*	background: red;
+/*}
+/*a:visited{/*paginas visitadas*/
+/*	color: #ff9900;
+/*}*/
+

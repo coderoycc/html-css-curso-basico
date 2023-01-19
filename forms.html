@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tomatela</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Este es un documento html5">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="icon" type="image/png" href="/home/roy/Imágenes/Ada.png" sizes="16x16">
+	<!-- El tamaño de el icono es 16x16 para que se pueda ver en la pestaña del navegador-->
+	<link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+	<header id="Titu">
+		<h1>Formularios en html</h1>
+		<time datetime="2020-12-29" pubdate>Publicado el 29-12-2020</time>
+	</header>
+	<NAV>
+		<!--Para conectar el documento con otros documentos se usa <a> href para mostrar en otra ventana usa target="_blank"-->
+		Cometela | <a href="/home/roy/Imágenes/cierre.png">Instrucción</a> | <a href ="/home/roy/Documentos/HTML/forms.html">Formulario</a> | <a href="/home/roy/Documentos/HTML/prii.html">Primera Página</a>
+	</NAV>
+
+	<MAIN>
+		TEMA CENTRAL DE LA PÁGINA WEB
+		<section id="Identificador1">
+			Seccion principal o tema central
+
+			<!--FORMULARIOS HTML-->
+			<form name="Formulario" method="get" action="" id="formm"><!--pag 71-->
+				<!-- name especifica el nombre del formulario method especidica el metodo para enviar la información
+					get se usa para enviar una cantidad limitada, post se usa para enviar una cantidad ilimitasa-->
+				<p>
+					<label>Nombre: <input type="text" name="nombre" placeholder="Ingrese su nombre"></label>
+				</p><!--Label proprciona descripcion para cada campo de input (dos opciones FOR y sin For--> 
+				<p>
+					<label for="edad">Edad: </label>
+					<input type="number" name="edad" value="" min="10" max="120" placeholder="Introduzca su Edad">
+					<!--max y minlength se usa para determinar estimacion de entrada-->
+				</p> <!--usamo p para separar en lineas-->
+				
+				<p><label>Edad Selección con RADIO</label></p>
+				<p><label><input type="radio" name="edad" value="15" checked=""> 15 años</label></p>
+				<p><label><input type="radio" name="edad" value="20" > 20 años</label></p>
+				<p><label><input type="radio" name="edad" value="25" > 25 años</label></p>
+				<p><label><input type="radio" name="edad" value="30" > 30 años</label></p>
+				
+				<p><label>Seleccion con Checkbox</label></p>
+				<p><label><input type="Checkbox" name="Temalinux" value="15" checked=""> LINUX</label></p>
+				<p><label><input type="Checkbox" name="Temajava" value="20" > JAVASCRIPT</label></p>
+				<p><label><input type="Checkbox" name="Temacss" value="25" > CSS</label></p>
+				<p><label><input type="Checkbox" name="Temahtml" value="30" checked="">HTML</label></p>
+				<p>
+					<label>Fecha inicio: <input type="date" name="fecha" value="2020-06-27"></label>
+				</p>
+				<p>
+					<label>Número ejemplo: <input type="number" name="ejemplo" min="6" max="28" value="6"></label>
+				</p><!--con min y max se da un rango a los numeros a usar-->
+				<p>
+					<label>Número rango: <input type="range" name="numrango" min="12" max="30" value="18"></label>
+				</p>
+				<p>
+					<label>
+						Materias:
+						<select name="materias" id="listado">
+							<option value="1">INF112</option>
+							<option value="2">INF113</option>
+							<option value="3">INF111</option>
+						</select>
+					</label> <!-- Select desplega un caja de opciones-->
+				</p>
+				<p>
+					<label>Correo: <input type="email" name="correo" placeholder="Introduzca su correo" required></label>
+				</p><!--required es una opcion para pedir obligatoriamente y validar un dato (correo)-->
+				<p>
+					<label>Telefono: <input type="tel" name="telefono" list="telefonos"></label>
+				</p>
+				<p>
+					<label>Contraseña: <input type="password" name="contraseña" required></label>
+				</p>
+				<!--con datalist podemos dar sugerencias en un cuadro de texto-->
+				<datalist id="telefonos">
+					<option value="79656767" label="celular"></option>
+					<option value="2854233" label="telefono"></option>
+				</datalist>
+				<p>
+					<label>Ingrese carta de solicitud: <textarea name="texto" cols="20" rows="3"></textarea></label>
+				</p> <!--textarea nos sirve para ingresar grandes cantidades de texto cols es numero de columnas y rows filas-->
+				<p>
+					<input type="submit" value="Enviar datos">
+				</p> <!-- submit genera un boton para enviar datos. Con value modificamos texto inicial-->
+				<p><button type="submit">¿Enviar Formulario?</button></p>
+			</form>
+
+
+		</section>
+		<!--ID sirve para identificar etiquetas y aplicar cambios a todas las etiquetas con un mismo identificador-->
+		<section id="Identificador2">
+			<article>
+				<p><br>Termina formularios, empieza otra sección</p>
+			</article>
+			<p>
+				<div class="Comidas">Comida: Sajta, Bs. 12 </div>
+				<div class="Comidas">Comida: Chicharon, Bs. 30</div>
+				<p class="Comidas">Comida departamental Típica</p>
+				<div class="Comidas">Comida: Charkekan, Bs. 20</div>
+			<p>	
+			<p class="seccion">
+				En esta sección, si se hace demaciado extenso es necesario retroceder a la parte de arriba se puede hacer uso de
+				"(a)" con href para volver a una seección en especifico usando el identificador de la etiqueta por delante (#). Es decir, href ="#ID".
+			</p>
+			<div align=""><p id="Parrafo">
+				font-family —Esta propiedad declara el tipo de letra que se usa para mostrar el texto. Se
+pueden declarar múltiples valores separados por coma para ofrecer al navegador varias
+alternativas en caso de que algunos tipos de letra no se encuentren disponibles en el
+ordenador del usuario. Algunos de los valores estándar son Georgia , "Times New
+Roman" , Arial , Helvetica , "Arial Black" , Gadget , Tahoma , Geneva , Helvetica ,
+Verdana , Geneva , Impact , y sans-serif (los nombres compuestos por más de una
+palabra se deben declarar entre comillas dobles).
+<br>font-size —Esta propiedad determina el tamaño de la letra. El valor puede ser declarado
+en píxeles ( px ), porcentaje ( % ), o usando cualquiera de las unidades disponibles en CSS
+como em , rem , pt , etc. El valor por defecto es normalmente 16px .
+<br>font-weight —Esta propiedad determina si el texto se mostrará en negrita o no. Los
+valores disponibles son normal y bold , pero también podemos asignar los valores 100 ,
+200 , 300 , 400 , 500 , 600 , 700 , 800 , y 900 para determinar el grosor de la letra (solo
+disponibles para algunos tipos de letra).
+			</p></div>
+			<p>
+				<a href="#Titu">Subir</a>
+			</p>
+
+
+		</section>
+	</MAIN>
+	<footer>
+		<address>La Paz, Bolivia</address>
+		<small>&copy; 2020 <a href="https://inforoylessons.blogspot.com/">Visista el Blog</a></small>
+	</footer>
+</body>
+</html>

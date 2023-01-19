@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tomatela</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Este es un documento html5">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="icon" type="image/png" href="/home/roy/Imágenes/Ada.png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="/home/roy/Documentos/HTML/cssotro.css">
+	<!-- El tamaño de el icono es 16x16 para que se pueda ver en la pestaña del navegador-->
+</head>
+<body>
+	<header id="Titu">
+		<h1>Titulo de págima creada para ver usos de HTML</h1>
+		<time datetime="2020-12-29" pubdate>Publicado el 29-12-2020</time>
+	</header>
+	<NAV>
+		<!--Para conectar el documento con otros documentos se usa <a> href para mostrar en otra ventana usa target="_blank"-->
+		<a href="#">Cometela</a> | <a href="/home/roy/Imágenes/cierre.png">Instrucción</a> | <a href="/home/roy/Documentos/HTML/forms.html">Formulario</a> | <a href="/home/roy/Documentos/HTML/prii.html">Primera Página</a>
+	</NAV>
+
+	<MAIN>
+		TEMA CENTRAL DE LA PÁGINA WEB
+		<section id="Identificador1">
+			Seccion principal o tema central
+			<form name="busqueda" method="get">
+				<p><label>Buscar: <input type="search" name="Buscar" autocomplete="on"></label></p>
+				<p><input type="submit" name="enviar"></p>
+			</form><!--formulario de busqueda con automcomplete-->
+			<article>
+				Se presenta por secciones, esta es la primera sección.
+				<br>Este es un salto de linea con (br), no necesita una etiqueta de cierre como (/br), solo se debe poner al inicio de la linea con el salto.
+			</article>
+			<article>
+				Esta es la segunda sección
+				<br><p>
+					Esta linea se sobre entiende como un parrafo, usando (br) para hacer salto de linea y (p) para iniciar el parrafo. (p) si nencesita de una etiqueta de cierre (/p).
+				</p>
+				<div align = "center"><img src="/home/roy/Imágenes/Ada.png" alt="No se pudo cargar la imagen" width="200" height="200" /></div>
+				<p>
+					En la imagen usamos div para poder centrarla con aling = center en 
+					img (usamos src para dar la ubicación de la imagen a insertar).
+					width es para dar ancho y height es para dar altura a la imagen.
+					alt es el texto que se muestra si la imagen no se puede cargar.
+
+				</p>
+			</article>
+			<article>
+				<p>
+					Podemos manejar varios subsecciones con la etiqueta (article) para que se nos facilite la navegación por nuestra página.
+				</p>
+			</article>
+		</section>
+		<!--ID sirve para identificar etiquetas y aplicar cambios a todas las etiquetas con un mismo identificador-->
+		<section id="Identificador2">
+			<article>
+				Articulos de otra seccion con otro identificador
+			</article>
+			<p>
+				<div class="Comidas">Comida: Sajta, Bs. 12 </div>
+				<div class="Comidas">Comida: Chicharon, Bs. 30</div>
+				<div class="Comidas">Comida: Charkekan, Bs. 20</div>
+			<p>	
+			<p>
+				En esta sección, si se hace demaciado extenso es necesario retroceder a la parte de arriba se puede hacer uso de
+				"(a)" con href para volver a una seección en especifico usando el identificador de la etiqueta por delante (#). Es decir, href ="#ID".
+			</p>
+			<p>
+				<a href="#Titu">Subir</a>
+			</p>
+			<article>
+				<p>Las tablas nos ayudan a organizar textos.
+				<br>Con la <b>tr</b> definimos una fila de celdas, con la <b>td</b> definimos las celdas de cada fila. 
+				<br>Con la <b>th</b> definimos las columnas en los titulos de cada columna.</p>
+				<table border="1" >
+					<tr>
+						<th>Nombres</th>
+						<th colspan="2">Apellidos</th>
+						<!--Colsplan nos ayuda a unir una cantidad de columnas-->
+					</tr>
+					<tr>
+						<td>Roberto</td>
+						<td>Chambi</td>
+						<td>Calizaya</td>
+					</tr>
+					<tr>
+						<td>Alma</td>
+						<td>Marcelo</td>
+						<td>Gozo</td>
+					</tr>
+					<tr>
+						<td>Ana Liza</td>
+						<td>Melano</td>
+						<td>Parada</td>
+					</tr>
+				</table>
+			</article>
+		</section>
+		<aside>
+			<br>
+			<h3>Sección de citar algunos temas secundarios (Aside)</h3>
+			Temas con aporte semirelevante
+			<br><i>Letra cursiva (i) o (em)</i>
+			<br><u>Letra Subrayado (u)</u>
+			<br><b>Letra en negrita (b) o (strong)</b>	
+			<p>
+				Tambien existe las viñetas para hacer listado como ul que es el màs simple
+				.
+				<br>Este declara un listado simple con viñetas.
+				<ul>
+					<li>Contador</li>
+					<li>Abogado</li>
+					<li>Administrador</li>
+					<li>Chef</li>
+					<li>Ingeniero</li>
+				</ul>
+			</p>
+			<p>
+				Otro tipo de listado es el ol que tiene más opciones como:
+				<br>type, que indica el tipo de viñeta a usar.
+				<br>También reversed, que indica que la numeración vaya en reversa. Ambos estan acompañados de li
+				<ol type="a" reversed>
+					<li>Taxista</li>
+					<li>Carpintero</li>
+					<li>Albañil</li>
+					<li>Comerciante</li>
+				</ol>
+			</p>
+			<p>
+				Existe también el listado con descripciones que se usa con 
+				<br>dl acompañado de dt que determina el termino u objeto y dd que determina la descripción.
+				<dl>
+					<dt>Contador</dt>
+					<dd>Es la profesión que se dedica estrictamente al área económica.</dd>
+					<dt>Abogado</dt>
+					<dd>Profesión dedicada globalmente a actos legales, sus ambitos laborales pueden variar de acuerdo a sus especialidades y aptitudes cognitivas.</dd>
+					<dt>Ingeniero</dt>
+					<dd>Esta profesión es la más variada, puesto que se le atribuyen varias directrices en el campo de trabajo, sin embargo el punto central de esta profesión es combinar las destresas y/o habilidades de ingenio para cualquier area de trabajo pre medido.</dd>
+				</dl>
+			</p>
+			<br>Existe las listas desplegables que se muestran con hacer clic, debe estar dentro de una etiqueta DETAILS seguido de la etiqueta SUMARY, que muestra el texto visible. Entre etiquetas <b>p</b> se puede poner el texto a desplegarse.<br>
+			<br>
+			<div align="center"><details><!--con un div centramos la lista desplegable-->
+				<summary>Profesiones</summary>
+				<p>Contador</p>
+				<p>Abogado</p>
+				<p>Administrador</p>
+				<!--Agegamos un href con la etiqueta "a" para poder desplazarnos en nestra página-->
+				<p><a href="#Titu">Ingeniero</a></p>
+				<p>Chef</p>
+			</details></div>
+		</aside>
+	</MAIN>
+	<footer>
+		<address>La Paz, Bolivia</address>
+		<small>&copy; 2020 <a href="https://inforoylessons.blogspot.com/">Visista el Blog</a></small>
+	</footer>
+</body>
+</html>
